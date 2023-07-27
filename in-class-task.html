@@ -23,14 +23,31 @@
       <label for="tp">Customer TP</label><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <input name="Tp" type="tel" id="tp"><br><br>
 
-      <button type="submit">submit</button>&nbsp;&nbsp;
-      <button type="submit" formaction="Delete">Delete</button>&nbsp;&nbsp;
-      <button type="submit" formaction="Update" >Update</button>&nbsp;&nbsp;
-      <button type="submit" formaction="GetAll">GetAll</button>&nbsp;&nbsp;
-      <button type="reset">Clear All</button>
+      <label for="gender">Gender</label><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input list="genders" id="gender" name="ice-cream-choice">
+      <datalist id="genders">
+        <option value="Male">
+        <option value="FeMale">
+        <option value="Other">
+      </datalist><br><br>
+
+      <label for="date">Date</label><br>
+      <input type="date"id="date"><br><br>
+
+      <label for="delete">Delete</label>&nbsp;&nbsp;
+      <input type="image" src="assets/my/icons8-delete-24.png" id="delete"><br><br>
+
+      <label for="conditions">Accept</label>
+      <input name="Tp" type="checkbox" id="conditions"><br><br>
+
+      <button style="background-color: #75a3e5" type="submit">submit</button>&nbsp;&nbsp;
+      <button style="background-color: #75e584" type="submit" formaction="Delete">Delete</button>&nbsp;&nbsp;
+      <button style="background-color: #c575e5" type="submit" formaction="Update" >Update</button>&nbsp;&nbsp;
+      <button style="background-color: #e5a075" type="submit" formaction="GetAll">GetAll</button>&nbsp;&nbsp;
+      <button style="background-color: #8cec77" type="reset">Clear All</button>
 
     </fieldset>
   </form>
-  <button form="sample" type="submit" formaction="GetAll">GetAll</button>
+<!--  <button form="sample" type="submit" formaction="GetAll">GetAll</button>-->
 </body>
 </html>
