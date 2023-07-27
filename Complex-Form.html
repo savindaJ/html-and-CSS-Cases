@@ -120,7 +120,7 @@
 
     <label for="range">Your Skill with java(0 to 100)</label><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <input type="range" id="range" name="rangeInput" min="0" max="100" value="0"
-           oninput="amount.value=rangeInput.value">
+           oninput="amount.value=rangeInput.value">=
     <output id="amount" name="amount" for="rangeInput">0</output><br>
     <br><br>
     <label for="mark">Your mark for Maths</label><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -145,7 +145,13 @@
       </optgroup>
     </select><br><br>
 
-    <button style="background-color: #254e8b" type="submit">submit</button>&nbsp;&nbsp;
+    <meter value="90" id="fuel"
+           min="0" max="100"
+           low="33" high="66" optimum="80">
+      at 50/100
+    </meter> <br><br>
+
+    <button style="background-color: #254e8b; width: 100px; height: 40px" type="submit">submit</button>&nbsp;&nbsp;
 
   </fieldset>
 </form>
