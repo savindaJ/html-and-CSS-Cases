@@ -109,8 +109,10 @@
     <textarea id="story" name="story" rows="5" cols="33">text hear...</textarea><br><br>
 
     <label for="range">Your Skill with java(0 to 100)</label><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="range"  id="range" aria-valuemax="100" aria-valuemin="0" aria-selected="undefined"/><br><br>
-
+    <input type="range" id="range" name="rangeInput" min="0" max="100" value="0"
+           oninput="amount.value=rangeInput.value">
+    <output id="amount" name="amount" for="rangeInput">0</output><br>
+    <br><br>
     <label for="mark">Your mark for Maths</label><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <input type="number"  id="mark" /><br><br>
 
