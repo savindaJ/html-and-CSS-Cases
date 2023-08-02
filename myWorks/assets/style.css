@@ -104,6 +104,12 @@ div {
 .bShape {
     fill: #FFF;
     filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.41));
-    text-align: center;
     padding: 3612px 42px 2672px 927px;
+}
+
+.bShape2 {
+    fill: #FFF;
+    filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.41));
+    text-align: center;
+    padding: 491px 3612px 478px 2672px;
 }
