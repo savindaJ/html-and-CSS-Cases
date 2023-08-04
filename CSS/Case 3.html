@@ -4,14 +4,78 @@
     <meta charset="UTF-8">
     <title>Pseudo classes</title>
     <style>
-        h1:hover{
-            color: red;
-            text-align: center;
+        /*all adding*/
+        /*:hover{}*/
+
+        /*get first char*/
+        /*li:first-child{
+            color: #ee1bff;
         }
+
+        !*get last char*!
+        li:last-child{
+            color: #0a53be;
+        }
+
+       !* h1:first-child{
+            border: 1px dashed red;
+        }*!
+
+        !*select child in child id*!
+        li:nth-child(3){
+            color: red;
+        }
+
+        h1:nth-child(1){
+            color: red;
+        }
+*/
+        h1:nth-child(2){
+            color: red;
+        }
+
+        section h1:first-letter{
+            color: white;
+            border: 1px dashed red;
+            background-color: red;
+            border-radius: 10px 15px;
+            font-size: 30px;
+
+        }
+
+        h3:before{
+            content: '@';
+        }
+        h3:after{
+            content: '#';
+        }
+
+
 
     </style>
 </head>
 <body>
-    <h1>start</h1>
+<h1>Select and change my colors if the mouse is over the h1</h1>
+
+<p>Select the first last and 3rd list of the element</p>
+<ul>
+    <li>A</li>
+    <li>A</li>
+    <li>A</li>
+    <li>A</li>
+    <li>A</li>
+</ul>
+
+<h3>select and Input two imo to the start and end of this H3</h3>
+
+<!--Change the color of the link to red after it is visited-->
+<a href=""></a>
+
+<section>
+    <h1>A</h1>
+    <h1>B  -  select</h1>
+    <h1>C</h1>
+</section>
+
 </body>
 </html>
