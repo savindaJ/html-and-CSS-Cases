@@ -5,7 +5,8 @@
   <title>Traversing Using CSS</title>
 
   <style>
-    body section>section>div>ul:nth-child(3) li:nth-child(2){
+    body section>section>div>ul:nth-child(3) li:nth-child(2)::marker{
+      content: "*";
       color: red;
     }
   </style>
