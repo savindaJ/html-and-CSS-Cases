@@ -5,6 +5,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,800&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <title>CSS Rules</title>
     <style>
@@ -24,6 +30,7 @@
         }
         /*#h3Costom is id selector*/
         #h3Costom{
+            font-family: 'DM Sans', sans-serif;
             font-family: 'PT Sans Narrow', sans-serif;
         }
         /*.custom is class selector*/
@@ -31,6 +38,11 @@
             color: green;
             text-transform: capitalize;
         }
+
+        .material-symbols-outlined{
+            color: #0a53be;
+        }
+
     </style>
 </head>
 <body>
@@ -44,5 +56,11 @@
 
 <h3>Set me a red border</h3>
 <h3 id="h3Costom">Set me a red border & change the font to ubuntu</h3>
+
+<span class="material-symbols-outlined">
+airplanemode_active
+</span>
+
+<button class="material-symbols-outlined"> click me airplanemode_active</button>
 </body>
 </html>
