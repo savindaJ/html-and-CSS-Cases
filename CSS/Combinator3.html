@@ -5,6 +5,9 @@
     <title>Adjacent</title>
 
     <style>
+        /*Adjacent combination
+            working on same root
+                select element if its after element on same root !*/
         p+h1{
             color: red;
         }
@@ -20,5 +23,12 @@
 <h1>h1 5</h1>
 
 <p>sample paragraph 2</p>
+<h1>Adjacent usage</h1>
+
+<div>
+    <!--usage working in same root-->
+    <p>div paragraph</p>
+    <h1>im div inside hedder 1</h1>
+</div>
 </body>
 </html>
