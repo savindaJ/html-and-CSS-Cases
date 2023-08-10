@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Task 4</title>
+    <!--remove all default css part !-->
+    <link rel="stylesheet" href="assets/Css/normalize.css">
 
   <style>
     body div:nth-child(1){
@@ -61,12 +63,20 @@
       box-sizing: border-box;
       border-radius: 100%;
       border: 1px solid #b88be5;
+      /*absolute length ! is px */
       width: 400px;
       height: 400px;
       margin-top: 0px;
       margin-left: 0px;
       background : linear-gradient(to left,red, #9aa4ff);
       opacity: 0.8; /*use number meshement*/
+    }
+
+    body div:nth-child(6){
+      /*layout changes detect and adjust item*/
+      background: red;
+      height: 50vh;
+      width: 50vw;
     }
   </style>
 </head>
@@ -78,6 +88,10 @@
   <div></div>
   <div>
     <div></div>
+  </div>
+
+  <div>
+      my div
   </div>
 
 </body>
