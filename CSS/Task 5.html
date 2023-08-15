@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Task | 5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body{
       background-color: #c1f3b6;
     }
+
+    body div h1{
+        font-size : 2rem;
+    }
+
     body div{
+      font-size: 10px;
       border: 1px solid white;
-      width: 50%;
-      height: 50%;
+      width: 50vw;
+      height: 50vh;
       background-color: white;
     }
+
+    body div+p{
+        font-size: 2em;
+    }
+
     body div>div{
       border: 1px solid #e4b2f1;
-      width: 40vw;
-      height: 30vh;
+      width: 60%;
+      height: 30%;
       background-color: #e2a4ef;
     }
     body div:last-child{
-      box-sizing: border-box;
-      width: 100px;
-      height: 100px;
+      box-sizing: border-box;/*short an properties*/
+      width: 50px;
+      height: 50px;
       border-radius: 100%;
       margin-left: 10vw;
       background-color: #eca0c1;
