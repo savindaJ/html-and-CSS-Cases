@@ -29,3 +29,17 @@ body section>section:nth-child(4){
     bottom: 0;
     right: 0;
 }
+body section>section>div:first-child{
+    width: 15vw;
+    height: 15vw;
+    background-color: white;
+    border-radius: 50%;
+}
+body section>section>div:first-child:first-child{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
