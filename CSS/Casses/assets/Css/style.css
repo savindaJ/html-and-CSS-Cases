@@ -80,7 +80,7 @@ body section>section:nth-child(4)>div:first-child{
     transform: rotate(180deg);
     bottom: 0;
 }
-body section>div:last-child{
+body section>div:nth-child(5){
     width: 17vw;
     height: 17vw;
     background-color: #ffffff;
@@ -102,4 +102,26 @@ body section>div:nth-child(5)>div{
     right: 0;
     bottom: 0;
     left: 0;
+}
+body section>div:nth-child(6),body section>div:nth-child(7){
+    width: 15vw;
+    height: 7.5vw;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    background-color: #ffffff;
+}
+body section>div:nth-child(6){
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+body section>div:nth-child(7){
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: rotate(180deg);
 }
