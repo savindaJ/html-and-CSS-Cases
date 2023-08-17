@@ -1,3 +1,10 @@
+::-webkit-scrollbar{
+    width: 0.6vw;
+    background-color: #000000;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #09509b;
+}
 body section{
     position: relative;
 }
