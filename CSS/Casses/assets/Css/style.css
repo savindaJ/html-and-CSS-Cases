@@ -1,24 +1,31 @@
 body section{
     position: relative;
 }
-body section section{
+
+body section>section{
     width: 50vw;
     height: 50vh;
 }
-body section section:nth-child(1){
-    background-color: #f00d0d;
+
+body section>section:first-child{
     position: absolute;
-    right: 0px;
+    right: 0;
+    background-color: #278212;
 }
-body section section:nth-child(2){
-    background-color: #0ca700;
-}
-body section section:nth-child(3){
+
+body section>section:nth-child(2){
     position: absolute;
+    background-color: #e626ed;
+    bottom: 0;
+    right: 0;
+}
+body section>section:nth-child(3){
+    background-color: #e30000;
+    bottom: 0;
+    right: 0;
+}
+body section>section:nth-child(4){
     background-color: #e88b0a;
-}
-body section section:nth-child(4){
-    position: absolute;
-    background-color: #c940ef;
-    right: 0px;
+    bottom: 0;
+    right: 0;
 }
