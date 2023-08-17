@@ -1,0 +1,24 @@
+body section{
+    position: relative;
+}
+body section section{
+    width: 50vw;
+    height: 50vh;
+}
+body section section:nth-child(1){
+    background-color: #f00d0d;
+    position: absolute;
+    right: 0px;
+}
+body section section:nth-child(2){
+    background-color: #0ca700;
+}
+body section section:nth-child(3){
+    position: absolute;
+    background-color: #e88b0a;
+}
+body section section:nth-child(4){
+    position: absolute;
+    background-color: #c940ef;
+    right: 0px;
+}
