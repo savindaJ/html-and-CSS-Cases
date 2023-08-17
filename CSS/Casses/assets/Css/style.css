@@ -80,3 +80,26 @@ body section>section:nth-child(4)>div:first-child{
     transform: rotate(180deg);
     bottom: 0;
 }
+body section>div:last-child{
+    width: 17vw;
+    height: 17vw;
+    background-color: #ffffff;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+body section>div:nth-child(5)>div{
+    width: 13vw;
+    height: 13vw;
+    background-color: #e80a0a;
+    border-radius: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
