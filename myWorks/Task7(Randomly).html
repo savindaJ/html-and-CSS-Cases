@@ -7,11 +7,10 @@
 
   <style>
 
-
       main header{
           width:50vw;
           height: 10vh;
-          background-color: white;
+          background: linear-gradient(to left, #ea64d4, #9aa4ff);
           border: 1px solid black;
           border-radius: 10px;
           position: fixed;
@@ -20,6 +19,17 @@
           left: 0;
           right: 0;
           display: flex;
+      }
+
+      main header>nav>ul{
+          width: max-content;
+          height: max-content;
+          position: absolute;
+          margin: auto;
+          top: 0;
+          bottom: 0;
+          right: 25px;
+          left: 0;
       }
 
       main header>nav>ul>li{
@@ -33,6 +43,7 @@
           width: 80vw;
           border: 2px solid blue;
           border-radius: 10px;
+          padding: 30px;
       }
 
       main div:last-child{
@@ -43,6 +54,16 @@
           font-size: 50px;
           bottom: 50px;
           color: red;
+      }
+
+      main div:last-child:hover{
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+          -webkit-transition: all 0.20s linear;
+          color: #0a53be;
       }
 
   </style>
@@ -56,10 +77,10 @@
       <header>
           <nav>
               <ul>
-                  <li><i class="fa-solid fa-user"></i>&nbsp;<a href="www.lk.ijse">Customer Manage</a></li>
-                  <li><i class="fa-solid fa-cart-shopping" >&nbsp;</i><a>Item Manage</a></li>
-                  <li><i class="fa-solid fa-sitemap"></i>&nbsp;<a>Order Manage</a></li>
-                  <li><i class="fa-solid fa-folder"></i>&nbsp;<a>Order Detail Manage</a></li>
+                  <li><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;<a href="www.lk.ijse">Customer Manage</a></li>
+                  <li><i class="fa-solid fa-cart-shopping" >&nbsp;&nbsp;&nbsp;</i><a>Item Manage</a></li>
+                  <li><i class="fa-solid fa-sitemap"></i>&nbsp;&nbsp;&nbsp;<a>Order Manage</a></li>
+                  <li><i class="fa-solid fa-folder"></i>&nbsp;&nbsp;&nbsp;<a>Order Detail Manage</a></li>
               </ul>
           </nav>
       </header>
@@ -121,7 +142,7 @@
       </section>
 
       <div>
-          <i class="fa-solid fa-phone-volume"></i>
+          <i class="fa-solid fa-phone-volume" onclick="alert('not developed !')"></i>
       </div>
 
   </section>
