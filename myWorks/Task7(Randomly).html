@@ -6,16 +6,26 @@
 
   <style>
 
-      main header i{
+      *{
+          scroll-behavior: smooth;
+
+      }
+
+      p{
+          color: white;
+      }
+
+       header i{
           color: white;
           box-shadow: 20px 20px 20px #3c58cb;
       }
 
-      main header i:hover{
+       header i:hover{
           color: black;
       }
 
-      main header{
+       header{
+           z-index: 15;
           width:50vw;
           height: 10vh;
           background: linear-gradient(to left, #ea64d4, #9aa4ff);
@@ -29,7 +39,7 @@
           display: flex;
       }
 
-      main header>nav>ul{
+       header>nav>ul{
           width: max-content;
           height: max-content;
           position: absolute;
@@ -40,121 +50,180 @@
           left: 0;
       }
 
-      main header>nav>ul>li{
+       header>nav>ul>li{
           display: inline-block;
           padding-left: 10px;
       }
 
-      main section>section{
-          margin-top: 15vh;
-          margin-left: 125px;
-          width: 80vw;
-          border: 2px solid blue;
-          border-radius: 10px;
-          padding: 30px;
+     main{
+         position: relative;
+         margin-top: 150px;
+         z-index: -15;
+     }
+
+     main>section{
+         width: 98%;
+         height: 100vh;
+         border: 1px solid red;
+         margin-top: 50px;
+         margin-left: 15px;
+     }
+
+     main>section>div:first-child{
+         left: 0;
+         right: 0;
+         height: 50px;
+         background-color: #0a53be;
+         position: sticky;
+         top: 100px;
+     }
+
+       main>section:first-child>div:first-child{
+           background: linear-gradient(to left, #a345ca, #1832ae);
+       }
+
+       main>section:first-child{
+           background: url("../myWorks/assets/image/nature.jpg");
+           background-attachment: fixed;
+           background-size: cover;
+           background-position: center;
+       }
+
+      main>section:nth-child(2){
+          background: url("../myWorks/assets/image/nature (1).jpg");
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
       }
 
-      main div:last-child{
-          position: fixed;
-          display: flex;
-          margin: auto;
-          right: 50px;
-          font-size: 50px;
-          bottom: 50px;
-          color: red;
+      main>section:nth-child(3){
+          background: url("../myWorks/assets/image/nature (2).jpg");
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
       }
 
-      main div:last-child:hover{
-          -webkit-transform: rotate(90deg);
-          -moz-transform: rotate(90deg);
-          -o-transform: rotate(90deg);
-          -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-          -webkit-transition: all 0.20s linear;
-          color: #0a53be;
+      main>section:nth-child(4){
+          background: url("../myWorks/assets/image/nature (9).jpg");
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
       }
 
+       main>section:nth-child(2)>div:first-child{
+           background: linear-gradient(to left, #4fe750, #dec845);
+       }
+
+       main>section:nth-child(3)>div:first-child{
+           background: linear-gradient(to left, #7a76e7, #55dbbc);
+       }
+
+       main>section:nth-child(4)>div:first-child{
+           background: linear-gradient(to left, #e28255, #cd55db);
+       }
+
+       body>div:first-child{
+           width: 100%;
+           height: 100px;
+           background: white;
+           position: fixed;
+           top: 0;
+       }
+
+       main div:last-child{
+           position: fixed;
+           font-size: 60px;
+           color: red;
+           bottom: 20px;
+           right: 10px;
+           z-index: 20;
+       }
   </style>
 
     <link rel="stylesheet" href="assets/font-awsome/fontawesome-free-6.4.2-web/css/all.min.css">
 
 </head>
 <body>
+
+            <div></div>
+
+            <header>
+                <nav>
+                    <ul>
+                        <li><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;<a href="#first">Customer Manage</a></li>
+                        <li><i class="fa-solid fa-cart-shopping" >&nbsp;&nbsp;&nbsp;</i><a href="#second">Item Manage</a></li>
+                        <li><i class="fa-solid fa-sitemap"></i>&nbsp;&nbsp;&nbsp;<a href="#therd">Order Manage</a></li>
+                        <li><i class="fa-solid fa-folder"></i>&nbsp;&nbsp;&nbsp;<a href="#forth">Order Detail Manage</a></li>
+                    </ul>
+                </nav>
+            </header>
   <main>
 
-      <header>
-          <nav>
-              <ul>
-                  <li><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;<a href="www.lk.ijse">Customer Manage</a></li>
-                  <li><i class="fa-solid fa-cart-shopping" >&nbsp;&nbsp;&nbsp;</i><a>Item Manage</a></li>
-                  <li><i class="fa-solid fa-sitemap"></i>&nbsp;&nbsp;&nbsp;<a>Order Manage</a></li>
-                  <li><i class="fa-solid fa-folder"></i>&nbsp;&nbsp;&nbsp;<a>Order Detail Manage</a></li>
-              </ul>
-          </nav>
-      </header>
+          <section id="first" class="section">
+              <div>
+              </div>
+              <section>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              </section>
+          </section>
+          <section id="second" class="section">
+              <div></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
 
-  <section>
-      <section>
-          <h1>Heading</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam blanditiis consequatur corporis cum
-              debitis dicta dolorem fugit illo libero neque nisi, non, quas sapiente soluta vel veritatis. Ex,
-              quibusdam.</p>
+          </section>
+          <section id="therd" class="section">
+              <div></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam blanditiis consequatur corporis cum
-              debitis dicta dolorem fugit illo libero neque nisi, non, quas sapiente soluta vel veritatis. Ex,
-              quibusdam.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam blanditiis consequatur corporis cum
-              debitis dicta dolorem fugit illo libero neque nisi, non, quas sapiente soluta vel veritatis. Ex,
-              quibusdam.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam blanditiis consequatur corporis cum
-              debitis dicta dolorem fugit illo libero neque nisi, non, quas sapiente soluta vel veritatis. Ex,
-              quibusdam.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam blanditiis consequatur corporis cum
-              debitis dicta dolorem fugit illo libero neque nisi, non, quas sapiente soluta vel veritatis. Ex,
-              quibusdam.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam blanditiis consequatur corporis cum
-              debitis dicta dolorem fugit illo libero neque nisi, non, quas sapiente soluta vel veritatis. Ex,
-              quibusdam.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam blanditiis consequatur corporis cum
-              debitis dicta dolorem fugit illo libero neque nisi, non, quas sapiente soluta vel veritatis. Ex,
-              quibusdam.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam blanditiis consequatur corporis cum
-              debitis dicta dolorem fugit illo libero neque nisi, non, quas sapiente soluta vel veritatis. Ex,
-              quibusdam.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam blanditiis consequatur corporis cum
-              debitis dicta dolorem fugit illo libero neque nisi, non, quas sapiente soluta vel veritatis. Ex,
-              quibusdam.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam blanditiis consequatur corporis cum
-              debitis dicta dolorem fugit illo libero neque nisi, non, quas sapiente soluta vel veritatis. Ex,
-              quibusdam.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam blanditiis consequatur corporis cum
-              debitis dicta dolorem fugit illo libero neque nisi, non, quas sapiente soluta vel veritatis. Ex,
-              quibusdam.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam blanditiis consequatur corporis cum
-              debitis dicta dolorem fugit illo libero neque nisi, non, quas sapiente soluta vel veritatis. Ex,
-              quibusdam.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam blanditiis consequatur corporis cum
-              debitis dicta dolorem fugit illo libero neque nisi, non, quas sapiente soluta vel veritatis. Ex,
-              quibusdam.</p>
-      </section>
+          </section>
+          <section id="forth" class="section">
+              <div></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
+          </section>
 
       <div>
-          <i class="fa-solid fa-phone-volume" onclick="alert('not developed !')"></i>
+          <i class="fa-solid fa-phone-volume"></i>
       </div>
-
-  </section>
-
   </main>
 </body>
 </html>
