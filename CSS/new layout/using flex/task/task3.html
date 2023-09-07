@@ -9,6 +9,7 @@
       display: flex;
       flex-direction: column;
       border: 1px solid deeppink;
+      justify-content: space-between;
     }
 
     section>div{
@@ -16,6 +17,19 @@
       height: 50px;
       border: 1px solid red;
     }
+
+    section>div:first-child{
+      align-self: flex-start;
+    }
+
+    section>div:nth-child(2){
+      align-self: center;
+    }
+
+    section>div:last-child{
+      align-self: flex-end;
+    }
+
   </style>
 </head>
 <body>
