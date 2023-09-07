@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calc</title>
+    <style>
+
+        /*positions
+          display-inline
+          box sizing*/
+
+        body > section{
+            width: 95%;
+            height: 50vh;
+            border: 5px solid red;
+            font-size: 0;/*remove div spaces*/
+        }
+
+        body > section > div{
+            width: calc(100%/3);
+            position: relative;
+            height: 100%;
+            border: 2px solid #000000;
+            display: inline-block;
+            background: url("./img/nature (1).jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            box-sizing: border-box; /*// compress border*/
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>
