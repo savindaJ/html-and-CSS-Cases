@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>task 3</title>
+  <style>
+
+    section{
+      width: 90%;
+      height: 70vh;
+      display: flex;
+      flex-direction: row;
+      border: 1px solid green;
+    }
+
+    section>div{
+      width: 300px;
+      height: 200px;
+      border: 1px solid red;
+
+      /*over flow container !*/
+      /*flex-shrink: 0;*/
+
+      /*without width property*/
+      /*flex-basis: 400px;*/
+    }
+
+    section>div:first-child{
+      /*flex-grow: 2;*/ /*manage item width for container scale*/
+       /*use it flex items select one by one !*/
+
+    }
+
+    section>div:nth-child(2){
+      /*flex-grow: 1;*/
+    }
+
+    section>div:last-child{
+      /*flex-grow: 3;*/
+    }
+
+  </style>
+</head>
+<body>
+<section>
+  <div></div>
+  <div></div>
+  <div></div>
+</section>
+</body>
+</html>
