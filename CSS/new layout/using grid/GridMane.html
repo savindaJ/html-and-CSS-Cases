@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid</title>
+
+    <style>
+      section{
+        width: 900px;
+        height: 500px;
+        border: 2px solid black;
+        display: grid;
+        /*grid-auto-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;*/
+
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
+        gap: 5px;/*gap all items*/
+        row-gap: 5px;/*gap row*/
+        column-gap: 5px;/*gap column*/
+      }
+
+      section>div{
+        border: 1px solid red;
+      }
+    </style>
+</head>
+<body>
+  <section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+</body>
+</html>
