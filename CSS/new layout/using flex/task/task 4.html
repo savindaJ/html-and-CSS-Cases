@@ -11,24 +11,26 @@
       display: flex;
       flex-direction: row;
       border: 1px solid green;
+
+      /*without overflow fix container ! but fill container going over flow*/
+      flex-wrap: wrap; /*default nowrap*/
     }
 
     section>div{
-      width: 300px;
+      width: 500px;
       height: 200px;
       border: 1px solid red;
-
       /*over flow container !*/
       /*flex-shrink: 0;*/
 
       /*without width property*/
       /*flex-basis: 400px;*/
+
     }
 
     section>div:first-child{
       /*flex-grow: 2;*/ /*manage item width for container scale*/
        /*use it flex items select one by one !*/
-
     }
 
     section>div:nth-child(2){
