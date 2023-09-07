@@ -58,7 +58,7 @@
      main{
          position: relative;
          margin-top: 150px;
-         z-index: -15;
+         z-index: 10;
      }
 
      main>section{
@@ -128,15 +128,24 @@
            background: white;
            position: fixed;
            top: 0;
+           z-index: 15;
        }
 
-       main div:last-child{
+       main>a:last-child{
            position: fixed;
            font-size: 60px;
            color: red;
            bottom: 20px;
            right: 10px;
+           z-index: 100;
+       }
+
+       main>div:nth-child(5){
+           font-size: 50px;
+           position: fixed;
+           top: 50px;
            z-index: 20;
+
        }
   </style>
 
@@ -221,9 +230,12 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at debitis enim excepturi facere labore modi molestias pariatur recusandae rerum. Architecto cum dolore iste maxime nemo nostrum odio pariatur repellendus.</p>
           </section>
 
+
       <div>
-          <i class="fa-solid fa-phone-volume"></i>
+          <a href="#first"><i class="fa-solid fa-house"></i></a>
       </div>
+
+      <a href="#first"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
   </main>
 </body>
 </html>
