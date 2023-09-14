@@ -258,10 +258,3 @@ main section section:first-child>div:last-child{
         font-size: small;
     }
 }
-
-@media all and (min-width: 425px) and (max-width: 768px){
-    main section {
-        margin-left: 110px;
-        position: relative;
-    }
-}
