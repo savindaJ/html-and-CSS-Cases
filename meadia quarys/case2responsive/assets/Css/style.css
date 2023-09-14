@@ -148,7 +148,7 @@ main section section:first-child>div:last-child{
     body header>aside>img {
         width: 45vw;
         position: relative;
-        left: 108px;
+        left: 90px;
         top: 19px;
     }
 
@@ -161,7 +161,7 @@ main section section:first-child>div:last-child{
     body main>nav{
         position: absolute;
         background: #c940ef;
-        top: -60px;
+        top: 0;
     }
     main section {
         margin-left: 15vw;
@@ -198,4 +198,63 @@ main section section:first-child>div:last-child{
         font-size: small;
     }
 
+}
+
+@media all and (min-width: 320px) and (max-width: 425px){
+    body header>nav{
+        display: none;
+    }
+
+    body header>aside>img {
+        width: 45vw;
+        position: relative;
+        left: 90px;
+        top: 19px;
+    }
+
+    body main>nav>ul>li>a{
+        color: white;
+        padding-top: 0  ;
+        font-size: 0.8em;
+    }
+
+    body main>nav{
+        position: absolute;
+        background: #c940ef;
+        top: 0;
+    }
+    main section {
+        margin-left: 15vw;
+        position: relative;
+    }
+
+    body main>nav>ul>li {
+        position: relative;
+        left: -43px;
+    }
+
+    body section>section:first-child{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    main section>section:first-child>img:first-child {
+        width: 64vw;
+        right: 0;
+    }
+
+    main section>section:first-child>img:nth-child(2) {
+        width: 64vw;
+        right: 0;
+    }
+
+    main section>section:first-child>img:last-child {
+        width: 64vw;
+        right: 0;
+    }
+
+    body main>nav>ul>li>a:hover{
+        color: #0a58ca;
+        font-size: small;
+    }
 }
