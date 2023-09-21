@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>example 1</title>
+  <style>
+
+    h1{
+      color: red;
+      animation-name: h1-anim;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      font-size: 50px;
+      position: relative;
+      width: max-content;
+      animation-delay: 2s;
+    }
+
+    @keyframes h1-anim {
+       /* from{
+          color: orange;
+          left: 0;
+          top: 0;
+        }to{
+        color: #0b5ed7;
+        left: 100px;
+        top: 100px;
+        }*/
+
+      0%{
+        left: 0;
+        top: 0;
+        color: green;
+      }50%{
+        left: 300px;
+        top: 100px;
+        font-size: 100px;
+      }100%{
+        top: 0;
+        color: #0b5ed7;
+      left: 0;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <h1>Sample Animation</h1>
+</body>
+</html>
